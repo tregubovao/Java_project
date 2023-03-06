@@ -14,7 +14,7 @@ public class HW1 {
     private static void inpNameTimesOfDay() {
 //        System.out.println(LocalTime.now());
         Scanner inp = new Scanner(System.in);
-        System.out.printf("Введите Ваше имя: ");
+        System.out.print("Введите Ваше имя: ");
         String name = inp.nextLine();
         inp.close();
         LocalTime now = LocalTime.now();
