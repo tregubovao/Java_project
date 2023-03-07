@@ -1,28 +1,20 @@
 package lesson1;
 
-import java.sql.Time;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.util.Date;
 import java.util.Scanner;
 
-public class Main {
+public class HW1 {
     public static void main(String[] args) {
-//        arrayB();
-//        test();
-//        inNameAndSay();
-
         minAndMax();
 //        moveToTheBack();
 //        inpNameTimesOfDay();
 
-//        System.out.println("Hello, world");
     }
 
     private static void inpNameTimesOfDay() {
 //        System.out.println(LocalTime.now());
         Scanner inp = new Scanner(System.in);
-        System.out.printf("Введите Ваше имя: ");
+        System.out.print("Введите Ваше имя: ");
         String name = inp.nextLine();
         inp.close();
         LocalTime now = LocalTime.now();
@@ -38,16 +30,8 @@ public class Main {
         }
     }
 
-    private static void inNameAndSay() {
-        Scanner in = new Scanner(System.in);
-        System.out.printf("Введите Ваше имя: ");
-        String name = in.nextLine();
-        System.out.printf("Привет, " + name + "!");
-        in.close();
-    }
-
     private static void minAndMax() {
-        int[] arr = {1, -14, 5, 6, 3, 9, -6, 25, 8};
+        int[] arr = {1, -14, 5, 6, 3, 9, -36, 45, 8};
         int minn = arr[0];
         int maxx = arr[0];
         for (int el: arr) {
@@ -60,37 +44,6 @@ public class Main {
         }
         System.out.println("Минимальный элемент: " + minn);
         System.out.println("Максимальный элемент: " + maxx);
-    }
-
-    static void test() {
-
-        System.out.printf("Hello, world!");
-    }
-
-    private static void arrayB() {
-        int[] arr = {1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1};
-        int count = 0;
-        int maxx = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == 1) {
-                count += 1;
-//                System.out.println("count" + count);
-
-            } else {
-                if (count > maxx) {
-                    maxx = count;
-                }
-                count = 0;
-            }
-
-            /*if (arr[i] == 1) count += 1;
-            if (count > maxx) maxx = count;
-            if (arr[i] != 1) count = 0;*/
-        }
-        if (count > maxx) {
-            maxx = count;
-        }
-        System.out.println("MAX кол-во 1: " + maxx);
     }
 
     private static void moveToTheBack() {
@@ -115,7 +68,4 @@ public class Main {
             System.out.print(item2 + " ");
     }
 
-
 }
-
-
