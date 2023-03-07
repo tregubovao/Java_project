@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class HW1 {
     public static void main(String[] args) {
-        minAndMax();
-//        moveToTheBack();
+//        minAndMax();
+        moveToTheBack();
 //        inpNameTimesOfDay();
 
     }
@@ -47,7 +47,7 @@ public class HW1 {
     }
 
     private static void moveToTheBack() {
-        int[] arr1 = {3, 3, 2, 2, 2, 3, 3, 3, 2};
+        int[] arr1 = {2, 2, 2, 3, 3, 3, 2};
         int[] arr2 = new int[arr1.length];
         int val = 3;
         int count3 = 0;
